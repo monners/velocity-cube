@@ -45,6 +45,9 @@
 	}
 	.back {
 		transform: translateZ(0) rotateY(180deg);
+		&:nth-of-type(2n) {
+			background: #d0e098;
+		}
 	}
 	.right {
 		transform: rotateY(-270deg) translateX(0);
