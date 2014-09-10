@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  padding: 100px;
+  margin: auto;
+  -webkit-transform: translateY(150px); }
+
+#stage {
+  display: block;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: rotateX(80deg) rotateY(0deg) rotateZ(250deg);
+  background: grey; }
+
+.cube {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d; }
+  .cube div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    opacity: 0.5; }
+  .cube .back {
+    transform: translateZ(0) rotateY(180deg); }
+  .cube .right {
+    transform: rotateY(-270deg) translateX(0);
+    transform-origin: top right; }
+  .cube .left {
+    transform: rotateY(270deg) translateX(0);
+    transform-origin: center left; }
+  .cube .top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top center; }
+  .cube .bottom {
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom center; }
+  .cube .front {
+    transform: translateZ(100px); }
